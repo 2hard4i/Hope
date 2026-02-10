@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Pirate Crew</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        /* HEADER */
+        header {
+            background: #1e3a8a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 100px 50px;
+            background: linear-gradient(to right, #ffffff, #e0e7ff);
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        /* TOPICS SECTION */
+        .topics {
+            padding: 80px 50px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .topic {
+            background: #f3f4f6;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: popUp 0.8s ease-out forwards;
+        }
+
+        .topic:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .topic:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .topic:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .topic h3 {
+            font-size: 28px;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .topic p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        /* POP-UP ANIMATION */
+        @keyframes popUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .topics {
+                padding: 50px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://i.pinimg.com/564x/30/7b/5d/307b5db78c2df1ddbf38e1d8e9d99bbd.jpg" alt="Logo">
+        <h1>Pirate Crew</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>About Pirate Crew</h2>
+    <p>We are a group of students working on this website as a project. Our goal is to learn and share knowledge about community engagement while building a simple and fun website together.</p>
+</section>
+
+<section class="topics">
+    <div class="topic">
+        <h3>1. Why We Made This</h3>
+        <p>We wanted to create a website that explains community engagement in a simple way. It’s a way for us to practice web design and teamwork while helping others understand how communities work.</p>
+    </div>
+
+    <div class="topic">
+        <h3>2. What We Did</h3>
+        <p>We built pages with information, pictures, and links to make it easy to learn about community engagement. Each part of the site is designed to show how students can work together and share knowledge.</p>
+    </div>
+
+    <div class="topic">
+        <h3>3. What We Learned</h3>
+        <p>Through this project, we practiced planning, coding, and presenting information online. We also learned how to work as a team and make something useful that others can see and enjoy.</p>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Pirate Crew | All Rights Reserved
+</footer>
+
+</body>
+</html>
