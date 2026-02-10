@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        /* HEADER */
+        header {
+            background: #1e3a8a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 80px;
+            background: linear-gradient(to right, #ffffff, #e0e7ff);
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .hero-text button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            background-color: #1e3a8a;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-text button:hover {
+            background-color: #2563eb;
+        }
+
+        .hero-image img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* FEATURES SECTION */
+        .features {
+            padding: 80px 50px;
+            text-align: center;
+            background: white;
+        }
+
+        .features h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #1e3a8a;
+        }
+
+        .feature-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: #f3f4f6;
+            padding: 30px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://i.pinimg.com/564x/30/7b/5d/307b5db78c2df1ddbf38e1d8e9d99bbd.jpg" alt="Logo">
+        <h1>Pirate Crew</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Building Ideas Into Reality</h2>
+        <p>This website demonstrates structured navigation, hyperlinks, and professional layout design.</p>
+        <button onclick="location.href='about.html'">Learn More</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://i.pinimg.com/736x/bf/ab/81/bfab81e72531d0cf85bd46e6b32fc476.jpg" alt="Website Image">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h3>Why Choose This Website?</h3>
+
+    <div class="feature-boxes">
+        <div class="box">
+            <h4>Clean Design</h4>
+            <p>Modern and structured layout for better user experience.</p>
+        </div>
+
+        <div class="box">
+            <h4>Easy Navigation</h4>
+            <p>Simple and clear hyperlinks between pages.</p>
+        </div>
+
+        <div class="box">
+            <h4>Responsive</h4>
+            <p>Works smoothly on desktop and mobile devices.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>
