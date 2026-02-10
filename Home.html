@@ -26,9 +26,40 @@
             padding: 15px 50px;
         }
 
+        /* HEADER ANIMATION */
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         .logo {
             display: flex;
             align-items: center;
+            opacity: 0;
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        nav {
+            opacity: 0;
+            animation: slideInRight 0.8s ease-out forwards;
+            animation-delay: 0.3s;
         }
 
         .logo img {
@@ -90,10 +121,30 @@
             background-color: #2563eb;
         }
 
+        /* HERO IMAGE POP-UP ANIMATION */
+        @keyframes popUp {
+            0% {
+                opacity: 0;
+                transform: scale(0.7) translateY(30px);
+            }
+            60% {
+                opacity: 1;
+                transform: scale(1.05) translateY(-5px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
         .hero-image img {
             width: 350px;
             border-radius: 20px;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+
+            opacity: 0;
+            animation: popUp 0.9s ease-out forwards;
+            animation-delay: 0.4s;
         }
 
         /* FEATURES SECTION */
@@ -167,11 +218,14 @@
     </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
     <div class="hero-text">
         <h2>Knowledge grows when it is shared</h2>
-        <p>This website demonstrates structured navigation, hyperlinks, and professional layout design.</p>
+        <p>
+            By sharing information on how the community works, this website helps
+            members understand one another, improve collaboration, and grow
+            stronger together as a community.
+        </p>
         <button onclick="location.href='about.html'">Learn More</button>
     </div>
 
@@ -180,7 +234,6 @@
     </div>
 </section>
 
-<!-- FEATURES -->
 <section class="features">
     <h3>Why Choose This Website?</h3>
 
@@ -208,3 +261,5 @@
 
 </body>
 </html>
+
+
